@@ -63,15 +63,22 @@ namespace Assignment2.Controllers
         // method to extract the substrings
         private string GetSubstring(string word)
         {
-            // TODO: Implement this method to get a part of the word.
+            // the logic?
+
             return word;
         }
 
         // method to check if the provided word is a palindrome or not
         private bool IsPalindrome(string word)
         {
-            // TODO: Implement this method to check if a word is a palindrome.
-            return false;
+            // removing the space and converting to lowercase to avoid case sensitive cases
+            word = word.Replace(" ", "").ToLower();
+            // storing the length of the word in a variable
+            int length = word.Length;
+
+            // the logic ?
+
+            return true;
         }
     }
 }
