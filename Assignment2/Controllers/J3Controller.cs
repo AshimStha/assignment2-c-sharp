@@ -22,6 +22,10 @@ namespace Assignment2.Controllers
         ///     The number of characters in the longest possible palindrome that can be formed in the
         ///     provided input string.
         /// </returns>
+        /// <example>
+        ///     Unfortunately, I was not able to come up with a logic to extract the substring and 
+        ///     check for the palindrome.
+        /// </example>
 
         // defining the route for the method
         [Route("api/Assignment2/J3/SecretPalindrome/{text}")]
@@ -41,7 +45,7 @@ namespace Assignment2.Controllers
                 for (int j = i; j < input.Length; j++)
                 {
                     // calling the GetSubString method to extract the substring from the start and end position
-                    string substring = GetSubstring(input, i, j);
+                    string substring = GetSubstring(input);
 
                     // if the substring is a palindrome and the length is more than the variable
                     if (IsPalindrome(substring) && substring.Length > longestPalindromeLength)
@@ -57,7 +61,7 @@ namespace Assignment2.Controllers
 
 
         // method to extract the substrings
-        private string GetSubstring(string word, int start, int end)
+        private string GetSubstring(string word)
         {
             // TODO: Implement this method to get a part of the word.
             return word;
